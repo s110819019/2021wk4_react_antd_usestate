@@ -237,11 +237,17 @@ body {
 }
 
 .product-status,
-.product-qty {
+.product-qty,
+.product-clr {
   font-size: 1rem;
   opacity: 0.7;
 }
-
+.product-clr {
+  margin-left: 1rem;
+}
+.product-styleInfo {
+  display: flex;
+}
 .qty-number {
   color: white;
   background-color: #111828;
