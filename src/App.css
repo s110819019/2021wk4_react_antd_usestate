@@ -268,3 +268,121 @@ body {
     height: 24rem;
   }
 }
+/* For HamMenu */
+.hamMenu{
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  z-index: 50;
+  top: 10%;
+  /* margin: 50px auto; */
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+.hamMenu-bar1 {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #8183ff;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+.hamMenu-bar1--touched{
+  top: 15px;
+  width: 0%;
+  left: 50%;
+}
+.hamMenu-bar2 {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #8183ff;
+  opacity: 1;
+  top: 15px;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+.hamMenu-bar2--touched{
+  transform: rotate(45deg);
+}
+.hamMenu-bar3 {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #8183ff;
+  opacity: 1;
+  top: 15px;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+.hamMenu-bar3--touched{
+  transform: rotate(-45deg);
+}
+.hamMenu-bar4 {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #8183ff;
+  opacity: 1;
+  top: 30px;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+.hamMenu-bar4--touched{
+  top: 15px;
+  width: 0%;
+  left: 50%;
+}
+.hamMenu,
+.collapse-mobile-wrap {
+  display: none;
+}
+@media (max-width:768px) {
+  .hamMenu {
+    left: 20px;
+  }
+  .showMobile {
+    display: block;
+  }
+  .collapse-mobile {
+    transform: translateX(-100%);
+    transition: .25s ease-in-out;
+  }
+  .nav-bar {
+    background-color: #111828;
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+    width: 70%;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .nav-bar-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background: #000;
+  }
+  .nav-item {
+    font-size: 1.2rem;
+    margin: 2rem auto;
+    width: 50%;
+  }
+}
